@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-right: 1000px;
+    margin-bottom: 350px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.card h2{
+    width: 100%;
+    height: 40px;
+    color: white;
+    margin: 6px;
+    padding: 0;
+    text-decoration: underline;
+}
+.card .email a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    cursor: default;
+    margin: 40px;
+    top: 12%;
+}
+.card .email i{
+    position: absolute;
+    font-size: 20px;
+    margin: 8px;
+    color: red;
+    background-color: white;
+    top: 26%;
+}
+.card .instagram a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    margin: 40px;
+    top: 32%;
+}
+.card .instagram i{
+    position: absolute;
+    font-size: 20px;
+    margin: 8px;
+    color: white;
+    background-color: #ee2a7b;
+    top: 46%;
+}
+.card .facebook a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    margin: 40px;
+    top: 52%;
+}
+.card .facebook i{
+    position: absolute;
+    font-size: 20px;
+    margin: 8px;
+    color: blue;
+    background-color: white;
+    top: 66%;
+}
+.wrapper-container{
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.wrapper-container:target{
+    transform: rotateY(180deg);
+}
+.wrapper{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    padding: 40px 70px;
+    backface-visibility: hidden;
+    backdrop-filter: blur(10px);
+    border: 5px solid;
+    border-radius: 30px;
+}
+.wrapper h1{
+    width: 250px;
+    margin-left: 45px;
+    justify-content: center;
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+}
+.wrapper .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+.wrapper .inputbox input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 20px;
+}
+.wrapper .inputbox label{
+    font-size:  17px;
+    font-weight: bold;
+    margin: -20px 10px 20px;
+}
+.wrapper .inputbox i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    font-size: 20px;
+}
+.wrapper .remember-forgot{
+    display: flex;
+    margin: 40px 8px 20px;
+    color: chartreuse;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: white;
+}
+.remember-forgot label input{
+    accent-color: white;
+}
+.remember-forgot a{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: grey;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.wrapper .register{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 10px
+}
+.wrapper .register p{
+    color: red;
+}
+.signup-link a{
+    text-decoration: none;
+    color: white;
+}
+.signup-link{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.signup-link i{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    margin-left: 5px;
+}
+.wrapper-back{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    padding: 20px 30px;
+    backface-visibility: hidden;
+    backdrop-filter: blur(10px);
+    border: 5px solid;
+    border-radius: 30px;
+    transform: rotateY(180deg);
+}
+.wrapper-back h1{
+    width: 250px;
+    margin-left: 80px;
+    justify-content: center;
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+}
+.wrapper-back .inputbox{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+}
+.wrapper-back .inputbox .email{
+    position: absolute;
+    width: 200px;
+}
+.wrapper-back .inputbox .name{
+    width: 200px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+}
+.wrapper-back .inputbox .dob{
+    position: absolute;
+    width: 200px;
+}
+.wrapper-back .inputbox .username{
+    width: 200px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+}
+.wrapper-back .inputbox .password{
+    position: absolute;
+    width: 200px;
+}
+.wrapper-back .inputbox .confirm{
+    width: 200px;
+    margin-left: 230px;
+}
+.wrapper-back .inputbox input{
+    width: 100%;
+    height: 45px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 15px;
+}
+.wrapper-back .inputbox label{
+    font-size:  17px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 0px;
+}
+.wrapper-back .inputbox .email i{
+    position: absolute;
+    left: 160px;
+    top: 45%;
+    font-size: 25px;
+}
+.wrapper-back .inputbox .name i{
+    position: absolute;
+    left: 390px;
+    top: 60%;
+    font-size: 25px;
+}
+.wrapper-back .inputbox .username i{
+    position: absolute;
+    left: 390px;
+    top: 115px;
+    font-size: 25px;
+}
+.wrapper-back .inputbox .password i{
+    position: absolute;
+    left: 160px;
+    top: 45%;
+    font-size: 25px;
+}
+.wrapper-back .btn{
+    width: 100%;
+    height: 50px;
+    margin-top: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: grey;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.wrapper-back .already{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px
+}
+.wrapper-back .already p{
+    color: red;
+}
+.login-link{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.login-link a{
+    text-decoration: none;
+    color: white;
+}
+.login-link i{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    margin-left: 5px;
+}
